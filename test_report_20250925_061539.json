@@ -1,0 +1,828 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-09-25T06:15:39.220729",
+    "test_start_time": "2025-09-25T06:05:24.103641",
+    "test_end_time": "2025-09-25T06:15:39.219727",
+    "total_duration_seconds": 615.116086,
+    "test_framework": "네이버 MySQL 분산 테스트 프레임워크",
+    "version": "1.0.0"
+  },
+  "test_results": {
+    "performance": {
+      "기본_SELECT_테스트": {
+        "test_name": "기본_SELECT_테스트",
+        "duration_seconds": 59.9905321598053,
+        "total_queries": 3000,
+        "successful_queries": 3000,
+        "failed_queries": 0,
+        "queries_per_second": 50.007891112025376,
+        "avg_response_time_ms": 10.242005825042725,
+        "p95_response_time_ms": 20.992279052734375,
+        "p99_response_time_ms": 30.83515167236328
+      },
+      "고부하_혼합_쿼리": {
+        "test_name": "고부하_혼합_쿼리",
+        "duration_seconds": 120.09559321403503,
+        "total_queries": 12000,
+        "successful_queries": 12000,
+        "failed_queries": 0,
+        "queries_per_second": 99.92040239656032,
+        "avg_response_time_ms": 11.885654548803965,
+        "p95_response_time_ms": 27.699947357177734,
+        "p99_response_time_ms": 37.06479072570801
+      },
+      "최대_처리량_테스트": {
+        "test_name": "최대_처리량_테스트",
+        "duration_seconds": 60.095805644989014,
+        "total_queries": 12000,
+        "successful_queries": 11983,
+        "failed_queries": 17,
+        "queries_per_second": 199.39827532704325,
+        "avg_response_time_ms": 23.60750398681228,
+        "p95_response_time_ms": 62.864065170288086,
+        "p99_response_time_ms": 74.30481910705566
+      }
+    },
+    "consistency": {
+      "read_after_write": {
+        "total_tests": 80,
+        "consistent_tests": 80,
+        "consistency_rate": 1.0,
+        "detailed_results": [
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:54.487423"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:55.017328"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:56.041910"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:58.056664"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:58.250909"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:58.759822"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:09:59.792318"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:01.803701"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:02.015386"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:02.526253"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:03.537327"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:05.569295"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:05.784371"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:06.313741"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:07.333060"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:09.354232"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:09.548095"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:10.066513"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:11.088111"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:13.102632"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:13.284371"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:13.796444"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:14.812123"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:16.843947"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:17.040683"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:17.556206"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:18.574043"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:20.585259"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:20.766522"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:21.280313"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:22.303258"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:24.308269"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:24.510408"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:25.043370"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:26.078850"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:28.108979"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:28.325372"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:28.842860"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:29.882161"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:31.921940"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:32.130679"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:32.648918"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:33.667886"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:35.698106"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:35.930367"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:36.451670"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:37.471137"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:39.480893"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:39.680448"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:40.200883"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:41.233165"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:43.254635"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:43.440057"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:43.949412"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:44.962361"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:46.979666"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:47.162026"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:47.683224"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:48.700697"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:50.719294"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:50.886248"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:51.404760"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:52.412877"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:54.418620"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:54.599132"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:55.115020"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:56.125564"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:58.139424"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:58.325130"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:58.863519"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:10:59.893476"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:01.911387"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:02.073024"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:02.589232"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:03.609617"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:05.627472"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:05.843818"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:06.365340"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:07.373158"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": true,
+            "timestamp": "2025-09-25T06:11:09.390154"
+          }
+        ]
+      },
+      "replication_lag": {
+        "avg_lag_seconds": 0.12266876697540283,
+        "max_lag_seconds": 0.14426803588867188,
+        "min_lag_seconds": 0.11277604103088379,
+        "measurements": [
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.12265133857727051,
+            "test_case": 0
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.12334275245666504,
+            "test_case": 1
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.11517763137817383,
+            "test_case": 2
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.13006591796875,
+            "test_case": 3
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.12265896797180176,
+            "test_case": 4
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.14426803588867188,
+            "test_case": 5
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.11867594718933105,
+            "test_case": 6
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.12365436553955078,
+            "test_case": 7
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.11341667175292969,
+            "test_case": 8
+          },
+          {
+            "slave_index": 0,
+            "lag_seconds": 0.11277604103088379,
+            "test_case": 9
+          }
+        ]
+      }
+    },
+    "stability": {
+      "long_running": {
+        "duration_seconds": 180.098619222641,
+        "total_requests": 5228,
+        "error_count": 0,
+        "success_rate": 1.0,
+        "uptime_percentage": 100.0,
+        "avg_response_time_ms": 4.920783896617699,
+        "memory_usage_history": [
+          {
+            "timestamp": 1758748276.5008848,
+            "memory_mb": 55.39453125
+          },
+          {
+            "timestamp": 1758748286.4881449,
+            "memory_mb": 55.39453125
+          },
+          {
+            "timestamp": 1758748296.504726,
+            "memory_mb": 55.39453125
+          },
+          {
+            "timestamp": 1758748306.521711,
+            "memory_mb": 55.39453125
+          },
+          {
+            "timestamp": 1758748316.5336792,
+            "memory_mb": 55.3984375
+          },
+          {
+            "timestamp": 1758748326.5216353,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748336.5335798,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748346.5340037,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748356.5364559,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748366.5423393,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748376.5593083,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748386.5595868,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748396.5679743,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748406.5762634,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748416.567218,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748426.584942,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748436.595656,
+            "memory_mb": 55.41015625
+          },
+          {
+            "timestamp": 1758748446.5815527,
+            "memory_mb": 55.41015625
+          }
+        ]
+      },
+      "memory_leak": {
+        "initial_memory_mb": 55.41015625,
+        "final_memory_mb": 52.55078125,
+        "memory_increase_mb": -2.859375,
+        "memory_increase_rate": -5.160380683820938,
+        "connections_tested": 100,
+        "leak_suspected": false,
+        "memory_samples": [
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625,
+          55.41015625
+        ]
+      },
+      "connection_pool": {
+        "max_successful_connections": 151,
+        "connection_errors": 398,
+        "error_details": [
+          {
+            "batch_size": 200,
+            "connection_id": 152,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 155,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 151,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 153,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 154,
+            "error": "(1040, 'Too many connections')"
+          }
+        ],
+        "connection_stability": "POOR"
+      },
+      "failover": {
+        "recovery_time_seconds": 35.065476417541504,
+        "normal_qps": 8.409837154696424,
+        "recovery_qps": 8.21745967373739,
+        "performance_impact_percent": 17.25567638313363,
+        "recovery_quality": "GOOD",
+        "target_recovery_time": 30,
+        "recovery_success": false
+      }
+    }
+  },
+  "summary": {
+    "total_test_suites": 3,
+    "successful_suites": 3,
+    "failed_suites": 0,
+    "overall_status": "PASS"
+  },
+  "recommendations": [
+    "성능 개선 필요: 기본_SELECT_테스트 QPS가 50.0로 낮음",
+    "성능 개선 필요: 고부하_혼합_쿼리 QPS가 99.9로 낮음"
+  ]
+}

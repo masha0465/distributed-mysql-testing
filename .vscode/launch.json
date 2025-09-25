@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MySQL Performance Test",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--test", "performance"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Full Test Suite",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--test", "all"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

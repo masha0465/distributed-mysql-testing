@@ -1,0 +1,11 @@
+[mysqld]
+# Replication settings
+server-id = 1
+log-bin = mysql-bin
+binlog-format = ROW
+gtid_mode = ON
+enforce_gtid_consistency = ON
+
+# Performance settings  
+max_connections = 1000
+innodb_buffer_pool_size = 1G

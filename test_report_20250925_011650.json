@@ -1,0 +1,778 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-09-25T01:16:50.203241",
+    "test_start_time": "2025-09-25T01:05:45.839523",
+    "test_end_time": "2025-09-25T01:16:50.202246",
+    "total_duration_seconds": 664.362723,
+    "test_framework": "네이버 MySQL 분산 테스트 프레임워크",
+    "version": "1.0.0"
+  },
+  "test_results": {
+    "performance": {
+      "기본_SELECT_테스트": {
+        "test_name": "기본_SELECT_테스트",
+        "duration_seconds": 59.988022565841675,
+        "total_queries": 3000,
+        "successful_queries": 3000,
+        "failed_queries": 0,
+        "queries_per_second": 50.00998318801489,
+        "avg_response_time_ms": 12.04717524846395,
+        "p95_response_time_ms": 25.94923973083496,
+        "p99_response_time_ms": 33.4012508392334
+      },
+      "고부하_혼합_쿼리": {
+        "test_name": "고부하_혼합_쿼리",
+        "duration_seconds": 120.09421229362488,
+        "total_queries": 12000,
+        "successful_queries": 12000,
+        "failed_queries": 0,
+        "queries_per_second": 99.92155134554316,
+        "avg_response_time_ms": 13.812711973985037,
+        "p95_response_time_ms": 33.71715545654297,
+        "p99_response_time_ms": 43.65682601928711
+      },
+      "최대_처리량_테스트": {
+        "test_name": "최대_처리량_테스트",
+        "duration_seconds": 60.09686994552612,
+        "total_queries": 12000,
+        "successful_queries": 11951,
+        "failed_queries": 49,
+        "queries_per_second": 198.86227037835414,
+        "avg_response_time_ms": 22.520629544306395,
+        "p95_response_time_ms": 62.27231025695801,
+        "p99_response_time_ms": 75.4084587097168
+      }
+    },
+    "consistency": {
+      "read_after_write": {
+        "total_tests": 80,
+        "consistent_tests": 0,
+        "consistency_rate": 0.0,
+        "detailed_results": [
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:16.213658"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:16.721104"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:17.758815"
+          },
+          {
+            "test_case": 0,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:19.777048"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:19.944206"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:20.459570"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:21.482016"
+          },
+          {
+            "test_case": 1,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:23.488602"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:23.655928"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:24.175626"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:25.201764"
+          },
+          {
+            "test_case": 2,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:27.218860"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:27.393289"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:27.913204"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:28.930272"
+          },
+          {
+            "test_case": 3,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:30.936943"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:31.107022"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:31.636701"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:32.652590"
+          },
+          {
+            "test_case": 4,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:34.675418"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:34.867007"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:35.385377"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:36.412187"
+          },
+          {
+            "test_case": 5,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:38.432742"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:38.647529"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:39.165748"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:40.181753"
+          },
+          {
+            "test_case": 6,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:42.196078"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:42.366409"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:42.887988"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:43.919983"
+          },
+          {
+            "test_case": 7,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:45.927825"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:46.113627"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:46.629687"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:47.637326"
+          },
+          {
+            "test_case": 8,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:49.649267"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:49.834029"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:50.369518"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:51.387892"
+          },
+          {
+            "test_case": 9,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:53.422912"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:53.616440"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:54.133735"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:55.151622"
+          },
+          {
+            "test_case": 10,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:57.165765"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:57.346588"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:57.861572"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:10:58.873624"
+          },
+          {
+            "test_case": 11,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:00.886790"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:01.072557"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:01.589110"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:02.605677"
+          },
+          {
+            "test_case": 12,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:04.622880"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:04.791686"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:05.306220"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:06.315223"
+          },
+          {
+            "test_case": 13,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:08.347757"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:08.540809"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:09.062613"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:10.089740"
+          },
+          {
+            "test_case": 14,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:12.119702"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:12.319017"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:12.832576"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:13.843603"
+          },
+          {
+            "test_case": 15,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:15.856991"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:16.028046"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:16.544612"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:17.576587"
+          },
+          {
+            "test_case": 16,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:19.598613"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:19.808576"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:20.328093"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:21.364829"
+          },
+          {
+            "test_case": 17,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:23.380035"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:23.578805"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:24.096239"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:25.132209"
+          },
+          {
+            "test_case": 18,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:27.171205"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 0.1,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:27.383651"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 0.5,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:27.899988"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 1.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:28.913627"
+          },
+          {
+            "test_case": 19,
+            "slave_index": 0,
+            "delay_seconds": 2.0,
+            "consistent": false,
+            "timestamp": "2025-09-25T01:11:30.920266"
+          }
+        ]
+      },
+      "replication_lag": {
+        "avg_lag_seconds": 0,
+        "max_lag_seconds": 0,
+        "min_lag_seconds": 0,
+        "measurements": []
+      }
+    },
+    "stability": {
+      "long_running": {
+        "duration_seconds": 180.0474615097046,
+        "total_requests": 5184,
+        "error_count": 0,
+        "success_rate": 1.0,
+        "uptime_percentage": 100.0,
+        "avg_response_time_ms": 5.030970836495176,
+        "memory_usage_history": [
+          {
+            "timestamp": 1758730347.4552417,
+            "memory_mb": 52.84375
+          },
+          {
+            "timestamp": 1758730357.4569316,
+            "memory_mb": 52.84375
+          },
+          {
+            "timestamp": 1758730367.4724956,
+            "memory_mb": 51.99609375
+          },
+          {
+            "timestamp": 1758730377.4726408,
+            "memory_mb": 52.0
+          },
+          {
+            "timestamp": 1758730387.4677758,
+            "memory_mb": 52.0
+          },
+          {
+            "timestamp": 1758730397.4760058,
+            "memory_mb": 52.04296875
+          },
+          {
+            "timestamp": 1758730407.4569635,
+            "memory_mb": 52.0546875
+          },
+          {
+            "timestamp": 1758730417.4698744,
+            "memory_mb": 52.05859375
+          },
+          {
+            "timestamp": 1758730427.4678648,
+            "memory_mb": 52.0625
+          },
+          {
+            "timestamp": 1758730437.4612427,
+            "memory_mb": 52.0625
+          },
+          {
+            "timestamp": 1758730447.473929,
+            "memory_mb": 52.0625
+          },
+          {
+            "timestamp": 1758730457.4904814,
+            "memory_mb": 52.06640625
+          },
+          {
+            "timestamp": 1758730467.4873579,
+            "memory_mb": 52.0703125
+          },
+          {
+            "timestamp": 1758730477.4941945,
+            "memory_mb": 52.1015625
+          },
+          {
+            "timestamp": 1758730487.503334,
+            "memory_mb": 52.1015625
+          },
+          {
+            "timestamp": 1758730497.516272,
+            "memory_mb": 52.1015625
+          },
+          {
+            "timestamp": 1758730507.5054593,
+            "memory_mb": 52.1015625
+          },
+          {
+            "timestamp": 1758730517.489609,
+            "memory_mb": 52.140625
+          }
+        ]
+      },
+      "memory_leak": {
+        "initial_memory_mb": 52.140625,
+        "final_memory_mb": 50.73828125,
+        "memory_increase_mb": -1.40234375,
+        "memory_increase_rate": -2.6895415043452204,
+        "connections_tested": 100,
+        "leak_suspected": false,
+        "memory_samples": [
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625,
+          52.16015625
+        ]
+      },
+      "connection_pool": {
+        "max_successful_connections": 152,
+        "connection_errors": 396,
+        "error_details": [
+          {
+            "batch_size": 200,
+            "connection_id": 199,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 152,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 153,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 155,
+            "error": "(1040, 'Too many connections')"
+          },
+          {
+            "batch_size": 200,
+            "connection_id": 154,
+            "error": "(1040, 'Too many connections')"
+          }
+        ],
+        "connection_stability": "POOR"
+      },
+      "failover": {
+        "recovery_time_seconds": 35.0855507850647,
+        "normal_qps": 8.182603181455063,
+        "recovery_qps": 8.14427638427724,
+        "performance_impact_percent": 1.2168928934927987,
+        "recovery_quality": "GOOD",
+        "target_recovery_time": 30,
+        "recovery_success": false
+      }
+    }
+  },
+  "summary": {
+    "total_test_suites": 3,
+    "successful_suites": 3,
+    "failed_suites": 0,
+    "overall_status": "PASS"
+  },
+  "recommendations": [
+    "성능 개선 필요: 기본_SELECT_테스트 QPS가 50.0로 낮음",
+    "성능 개선 필요: 고부하_혼합_쿼리 QPS가 99.9로 낮음",
+    "데이터 일관성 개선 필요: 0.0% (목표: 99% 이상)"
+  ]
+}

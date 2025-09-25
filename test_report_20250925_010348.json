@@ -1,0 +1,12 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-09-25T01:03:48.004763",
+    "test_start_time": "2025-09-25T00:52:42.788820",
+    "test_end_time": "2025-09-25T01:03:48.004763",
+    "total_duration_seconds": 665.215943,
+    "test_framework": "네이버 MySQL 분산 테스트 프레임워크",
+    "version": "1.0.0"
+  },
+  "test_results": {
+    "performance": {
+      "기본_SELECT_테스트": 

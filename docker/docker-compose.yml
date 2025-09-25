@@ -1,0 +1,39 @@
+version: "3.8"
+services:
+  mysql-master:
+    image: mysql:8.0
+    container_name: naver-mysql-master
+    environment:
+      MYSQL_ROOT_PASSWORD: testpass
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-config/master.cnf:/etc/mysql/conf.d/master.cnf
+    command: --server-id=1 --log-bin=mysql-bin --binlog-format=ROW
+    networks:
+      - mysql-network
+
+  mysql-slave:
+    image: mysql:8.0
+    container_name: naver-mysql-slave
+    environment:
+      MYSQL_ROOT_PASSWORD: testpass
+      MYSQL_DATABASE: testdb
+      MYSQL_USER: testuser
+      MYSQL_PASSWORD: testpass
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./mysql-config/slave.cnf:/etc/mysql/conf.d/slave.cnf
+    command: --server-id=2 --relay-log=mysql-relay-bin
+    depends_on:
+      - mysql-master
+    networks:
+      - mysql-network
+
+networks:
+  mysql-network:
+    driver: bridge
